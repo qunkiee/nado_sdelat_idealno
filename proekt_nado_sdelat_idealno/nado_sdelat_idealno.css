@@ -1,4 +1,4 @@
-@import url(./font.css); 
+@import url(./fonts/fonts.css); 
  
 *, 
 *::before, 
@@ -13,7 +13,6 @@ html {
 body { 
   display: flex; 
   justify-content: center; 
- 
   position: relative; 
   height: 100%; 
   min-width: 800px; 
@@ -24,19 +23,16 @@ body {
 h1 { 
   font-size: 116px; 
   text-align: center; 
- 
-  font-family: "Raleway-ExtraBold"; 
-  user-select: none;
+  font-family: "Raleway-ExtraBold", sans-serif; 
   text-transform: uppercase; 
   width: 739px; 
   height: 408px; 
-  top: 60px; 
-  left: 431px; 
+ 
 } 
  
 h1::after { 
   content: "*"; 
-  display: contents; 
+  
 } 
  
 h1:hover::before { 
@@ -49,16 +45,17 @@ h1:hover::before {
   border: 2px solid black; 
   box-shadow: 0px 10px 0px 0px #000000; 
   padding: 10px; 
-  top: 210px; 
-  left: 1000px; 
-  font-family: "Raleway-Regular";
+  top: 25%; 
+  left: 52%; 
+  font-family: "Raleway-Regular", sans-serif  ;
   z-index: 10;
+  pointer-events: none;
   
 } 
 
 h1:hover + .video{
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100%;
   top: 0;
@@ -66,14 +63,11 @@ h1:hover + .video{
   right: 0;
   bottom: 0;
   opacity: 0.8  ;
-  
-
+  pointer-events: none;
 }
 
-
-
 video { 
-  display: flex; 
+  
   width: 100%; 
   height: 100%; 
   object-fit: cover; 
