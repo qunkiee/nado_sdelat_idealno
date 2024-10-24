@@ -1,4 +1,4 @@
-@import url(./fonts/fonts.css); 
+@import url(/fonts/font.css); 
  
 *, 
 *::before, 
@@ -38,7 +38,7 @@ h1::after {
 h1:hover::before { 
   content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться."; 
   white-space: pre; 
-  font-size: 35px; 
+  font-size: 1.8vw; 
   position: absolute; 
   background-color: white; 
   border-radius: 20px ; 
@@ -50,7 +50,8 @@ h1:hover::before {
   font-family: "Raleway-Regular", sans-serif  ;
   z-index: 10;
   pointer-events: none;
-  
+  width: 46vw;
+
 } 
 
 h1:hover + .video{
